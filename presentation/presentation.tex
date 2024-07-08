@@ -28,7 +28,6 @@
     % \setbeameroption{show notes}
 }
 
-
 \title{ Repartition of inertia service between wind turbine and battery in power systems }
 % \subtitle{Project for the ET8301 course}
 \author{Andreetta Niccolò}
@@ -41,16 +40,19 @@
     \tableofcontents
   \end{frame}
 
+  \begin{frame}
+    \begin{itemize}
+      \item Lost of inertia problem: Implication of converter interfaced devices and so lost of inertia
+      \item New metrics: how can we evaluate the performance of the grid with the inclusion of this devices, since it is possible that the old one are no more able to characterize it sufficiently
+      \item How can we counteract to this lost of inertia: what's the inertia provision service, how can it be provided at market level (and possibly in APS)
+      \item Grid Forming and Following: how can we operate the electronic in grid forming and following mode for providing stability to the grid
+    \end{itemize}
+  \end{frame}
+
   \section{Background and problem statement}
   \begin{frame}{\insertsection}
     Increase of energy from renewable energy resources implies lost of inertia in the grid. 
 
-    One possible solution is gain inertia controlling the converters to act as synchronous machines (debate about that approach).
-
-    \begin{figure}
-      \centering
-      \includegraphics[width = 0.5\columnwidth]{florian_phone.png}
-    \end{figure}
   \end{frame}
   
   \section{Research questions}
@@ -59,5 +61,74 @@
     
     \textcolor{NTNUOrange}{Solution idea}: Allocate the amount of power between the available in the most economic way
   \end{frame}
+
+  \section{How can we quantify it?}
+
+  \begin{frame}{Time domain of the post-fault frequency evolution}{Classical metrics}
+    \begin{itemize}[<+(1)->]
+      \item Rate of Change of Frequency
+      \begin{equation}
+        \lvert \dot{\omega} \rvert _{max} = \max_i\left(\max_{t\ge0}\lvert \dot{\omega}_i(t) \rvert\right)
+      \end{equation}
+      
+      \item Frequency Nadir
+      \begin{equation}
+        \lvert \underline{\omega} \rvert = \max_i\lvert\min_{t\ge0} \omega_i(t) \rvert
+      \end{equation}
+      \item Peak virtual inertia power injection
+      \begin{equation}
+        \bar{p}_v = \max_i\left(\max_{t\ge0}\lvert p_{v,i}(t) \rvert\right)
+      \end{equation}
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Time domain of the post-fault frequency evolution}{Energy metrics}
+    
+    \begin{itemize}[<+(1)->]
+        \item Total energy imbalance
+        \begin{equation}
+          E_{\tau,\omega}=\int_{0}^{\tau}\sum_{i} q_i\omega_i^{2}dt=\int_{0}^{\tau} \omega^T Q \omega dt
+        \end{equation}
+        
+        \item Total virtual inertia effort
+        \begin{equation}
+          E_{\tau,m}=\int_{0}^{\tau}\sum_{i} r_{m,i}p_{m,i}^{2}dt=\int_{0}^{\tau} p_{m}^T R_m p_{m} dt
+        \end{equation}
+
+        \item Total virtual damping effort
+        \begin{equation}
+          E_{\tau,d}=\int_{0}^{\tau}\sum_{i} r_{d,i}p_{d,i}^{2}dt=\int_{0}^{\tau} p_{d}^T R_d p_{d} dt
+        \end{equation}
+      \end{itemize}
+
+      $q_i, r_m, and r_d$ are weights used for penalize one effort or the other
+  \end{frame}
+  
+  \begin{frame}
+  
+    Eigenvalue analysis
+    \begin{itemize}
+      \item Damping ratio of the power system
+      \begin{equation}
+        \zeta_{min} = \min_{k}\frac{-\sigma_k}{\sqrt{\sigma_k^2 + \omega_k^2}}
+      \end{equation}
+      with $\lambda_k=\sigma_k + \text{i}\omega_k$ the $k-th$ eigenvalue
+    \end{itemize}
+    
+    Physical and virtual inertia of the devices
+  \begin{itemize}
+    \item Total inertia
+    \begin{equation}
+      H_{total} = \sum_{i}H_i + \sum_{i} \tilde{H}_i = \sum_{i}\frac{m_i \omega_0}{2 S_{rated,i}} + \sum_{i} \frac{\tilde{m}_i \omega_0}{2 S_{rated,i}}
+    \end{equation} 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+    \item $\mathcal{H}_2$ norm: energy of the response to an impulse fault \textit{or} expected energy of the response to a white noise
+    \item $\mathcal{H}_{\inf}$ norm: root mean square gain from the disturbance to the performance output
+  \end{itemize}
+\end{frame}
   
 \end{document}
