@@ -28,6 +28,14 @@
     % \setbeameroption{show notes}
 }
 
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
 \title{ Repartition of inertia service between wind turbine and battery in power systems }
 % \subtitle{Project for the ET8301 course}
 \author{Andreetta Niccolò}
@@ -62,8 +70,7 @@
     \textcolor{NTNUOrange}{Solution idea}: Allocate the amount of power between the available in the most economic way
   \end{frame}
 
-  \section{How can we quantify it?}
-
+  \section{Metrics}
   \begin{frame}{Time domain of the post-fault frequency evolution}{Classical metrics}
     \begin{itemize}[<+(1)->]
       \item Rate of Change of Frequency
@@ -83,7 +90,6 @@
   \end{frame}
 
   \begin{frame}{Time domain of the post-fault frequency evolution}{Energy metrics}
-    
     \begin{itemize}[<+(1)->]
         \item Total energy imbalance
         \begin{equation}
@@ -105,7 +111,6 @@
   \end{frame}
   
   \begin{frame}
-  
     Eigenvalue analysis
     \begin{itemize}
       \item Damping ratio of the power system
@@ -125,10 +130,59 @@
 \end{frame}
 
 \begin{frame}
-  \begin{itemize}
+  \begin{itemize}[<+(1)->]
     \item $\mathcal{H}_2$ norm: energy of the response to an impulse fault \textit{or} expected energy of the response to a white noise
-    \item $\mathcal{H}_{\inf}$ norm: root mean square gain from the disturbance to the performance output
+    \begin{equation}
+      \int_{0}^{\infty}\| y_p \|^2 dt = \int_{0}^{\infty} \omega^T Q \omega + p_{m}^T R_m p_{m} + p_{d}^T R_d p_{d} dt
+    \end{equation}
+    \textcolor{NTNUViolet}{
+    Example: 
+    \begin{gather}
+      \text{System } \mathcal{G} :
+      \begin{cases}
+        \dot{x} = A x + G \eta \\
+        y_p = C x
+      \end{cases}
+      \Rightarrow \| \mathcal{G} \|_2^2=\text{trace}\left(G^T P G\right)\\
+      \text{Observability gramian: } PA + A^TP+C^TC=0
+    \end{gather} 
+    }
+    \item $\mathcal{H}_{\infty }$ norm: root mean square gain from the disturbance to the performance output
   \end{itemize}
 \end{frame}
+
+\begin{frame}{Use of the metrics}
+  Test on the Kundor model with two different damping configuration
+  \begin{columns}
+    \begin{column}{0.5\columnwidth}
+      \includegraphics[width = \columnwidth]{figure/kundor_frequency.png}
+    \end{column}
+    \begin{column}{0.5\columnwidth}
+      \begin{table}[h!]
+        \centering
+        \begin{tabular}{lcc}
+        \toprule
+        & Allocation 1 & Allocation 2 \\
+        \midrule
+        $H_{\text{total}}$ & 40.85 s & 40.85 s \\
+        $\zeta_{\text{min}}$ & 0.1190 & 0.1206 \\
+        $\left|\dot{\omega}\right|_{\max}$ & 0.8149 Hz/s & 0.8135 Hz/s \\
+        $\left|\omega\right|$ & 84.8 mHz & 65.1 mHz \\
+        $\mathcal{H}_2 $ & 1.5337 & 0.6522 \\
+        $\mathcal{H}_{\infty} $ & 0.7454 & 0.2782 \\
+        $\overline{P}_v$ & 118.38 MW & 7.0446 MW \\
+        \bottomrule
+        \end{tabular}
+      
+        \label{table:allocations}
+        \end{table}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\section{Inertia market}  
+\begin{frame}
   
+\end{frame}
+
 \end{document}
