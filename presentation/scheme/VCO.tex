@@ -1,0 +1,31 @@
+\tikzstyle{block} = [draw, fill=white!100, rounded corners]
+\tikzstyle{block_red} = [draw, color=red, fill=white!100, rounded corners]
+\tikzstyle{sum_plus_nw} = [draw, fill=white, circle, label=above left:$+$]% sum with + in north west position
+\tikzstyle{sum_minus_se} = [draw, fill=white, circle, label=below left:$-$]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+
+\adjustbox{width=0.75\columnwidth, center}{
+\begin{tikzpicture}[auto, >=latex']  
+  \node [style = input] (v_abc) { $v_{abc}$}; % delta P input
+  \node [style = block, right of = v_abc, node distance = 1.2cm] (PD) {PD};
+  \node [style = sum_minus_se, right of = PD] (sum_P) {}; 
+
+  \node [style = block, right of = sum_P] (LF) {LF};
+  \node [style = block_red, right of = LF, node distance = 1.7cm] (VCO) {VCO};
+
+  \node [style = output, right of = VCO] (fake_point) {};
+  \node [style = output, below of = fake_point, node distance = 0.7cm] (fake_point2) {};
+  \node [style = output, right of = fake_point, node distance = 0.5cm] (output) {};
+  
+  \draw [->] (v_abc) -> node[above] {$v_{abc}$} (PD);
+  \draw [->] (PD) -> node[above] {$v_{q}$}  (sum_P);
+  \draw [->] (sum_P) -> node[above] {$\epsilon_q$} (LF);
+  \draw [->] (LF) -- node {$\Delta \hat{\omega}$} (VCO);
+  \draw [-] (VCO) -- node {} (fake_point);
+  \draw [->] (fake_point) -- node {$\hat{v}_{q}$} (output);
+  \draw [-] (fake_point) -- node {} (fake_point2);
+  \draw [->] (fake_point2) -| node {} (sum_P);
+  
+\end{tikzpicture}
+}

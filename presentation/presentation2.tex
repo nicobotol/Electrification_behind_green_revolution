@@ -37,9 +37,9 @@
 }
 
 \title{ Repartition of inertia service between wind turbine and battery in power systems }
-% \subtitle{Project for the ET8301 course}
+\subtitle{The electrification behind the green revolution}
 \author{Andreetta Niccolò}
-\date{May $31^{st}$ 2024}
+\date{July 2024}
 
 \begin{document}
   \maketitle
@@ -180,9 +180,42 @@
   \end{columns}
 \end{frame}
 
-\section{Inertia market}  
-\begin{frame}
-  
+\section{PLL}  
+\begin{frame}{PLL schema}{\insertsection}
+  \begin{figure}
+    \input{scheme/PLL2.tex} 
+  \end{figure}
+\begin{itemize}
+  \item Phase Detector \textcolor{NTNUBlue}{PD}
+  \item Loop Filter \textcolor{NTNUBlue}{LP}
+  \item Voltage Controlled Oscillator \textcolor{NTNUBlue}{VCO}
+\end{itemize}
 \end{frame}
 
+\begin{frame}{Phase Detector}{\insertsection}
+  \begin{figure}
+    \input{scheme/PD.tex} 
+  \end{figure}
+  Measures the $v_{abc}(t)$ voltage and \textcolor{NTNUBlue}{transforms} it in a $dq$ reference frame.
+  \begin{equation*}
+    abc \Rightarrow \alpha\beta \Rightarrow dq
+  \end{equation*}
+
+  Extracts the $v_q(t)$ component
+\end{frame}
+
+\begin{frame}{Loop Filter}{\insertsection}
+  \begin{figure}
+    \input{scheme/LF.tex} 
+  \end{figure}
+ Takes the error between the measured voltage $v_q$ and the estimated one $\hat{v}_q$ and computes the estimation of the frequency deviation at the bus connection $\Delta \hat{\omega}$
+\end{frame}
+
+\begin{frame}{Voltage-Controlled Oscillator}{\insertsection}
+  \begin{figure}
+    \input{scheme/VCO.tex} 
+  \end{figure}
+ Takes the estimation of the frequency deviation at the bus connection $\Delta \hat{\omega}$  and estimates the voltage at the bus $\hat{v}_q$ 
+\end{frame}
+      
 \end{document}

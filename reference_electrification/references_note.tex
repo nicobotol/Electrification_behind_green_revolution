@@ -14,7 +14,18 @@
 \usepackage{booktabs}
 
 \begin{document}
-\section{Fast frequency control ancillary services: An international review}
+\section{PLL}
+Intuitively the frequency of the production of a CIG has to match the one of the grid. For this reason the frequency signal at the bus has to be estimated by means of the available measurements. PLL are the typical devices used for this purpose. It has 3 main parts:
+\begin{itemize}
+  \item Phase detector: measures the voltage abc at the bus of connection. Then the voltage is transformed in the $\alpha \beta $ and then in the dq frame. The voltage $v_q$ extracted
+  \item Loop filter: takes the error between the measured $v_q$ and the estimated by the PLL itself $\hat{v}_q$. Its output is an estimation of the frequency deviation $\Delta \hat{\omega}$ at the bus of connection
+  \item Voltage controller: takes the bus frequency deviations and provides the estimation of the bus voltage $\hat{v}_q$. It usually consists of a pure integrator 
+  \item The output is usually low pass filtered 
+\end{itemize}
+
+$v_q$ may suffer numerical issues because it may undergo fast electromagnetical transient\\
+PLL introduces time delays\\
+PLL may not be adequate for synchronization of multiple units in a low inertia system prone to fast frequency variations.
 
 
 \end{document}
