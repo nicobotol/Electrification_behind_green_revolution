@@ -39,6 +39,14 @@
   \end{frame}
 }
 
+\AtBeginSubsection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsubsection]
+  \end{frame}
+}
+
 \title{Floating PV and measure of the lost of inertia }
 \subtitle{The electrification behind the green revolution}
 \author{Andreetta Niccolò}
@@ -60,20 +68,20 @@
 
 \section{Floating solar PV}
 \subsection{Motivation and benefits}
-\begin{frame}{PV current trend}
+\begin{frame}{PV current trend}{\insertsubsection}
 \begin{columns}
-  \begin{column}{0.5\columnwidth}
+  \begin{column}{0.6\columnwidth}
     Renewable electricity capacity additions
     \begin{figure}
     \centering
-    \includegraphics[width=0.9\columnwidth]{figure/rec_shares.png}
+    \includegraphics[width=\columnwidth]{figure/rec_shares.png}
   \end{figure}
 \end{column}
-\begin{column}{0.5\columnwidth}
+\begin{column}{0.4\columnwidth}
   Cumulative PV power capacity
   \begin{figure}
     \centering
-    \includegraphics[width=0.9\columnwidth]{figure/pv_installation.png}
+    \includegraphics[width=\columnwidth]{figure/pv_installation.png}
     \end{figure}
   \end{column}
 \end{columns}
@@ -81,7 +89,7 @@
   {\tiny Source: \cite{irena2019}, \cite{iea2023}}
 \end{frame}
 
-\begin{frame}{PV plants classification}
+\begin{frame}{PV plants classification}{\insertsubsection}
   Traditionally we may identify two families of PV plants
 
   \textcolor{NTNUBlue}{Utility scale PV}: installed on dedicated locations, such as agricultural land. Their installed capacity may exceed 5 MW.
@@ -90,25 +98,25 @@
 
 \end{frame}
 
-\begin{frame}{PV plants classification: pros and cons}
+\begin{frame}{PV plants classification: pros and cons}{\insertsubsection}
   \begin{columns}
     \begin{column}{0.5\columnwidth}
       {\center \textcolor{NTNUBlue}{Utility scale}}\\
-      \textcolor{NTNUgreen}{+} Cost effective: \$/MW half of rooftop installations\\
-      \textcolor{NTNUgreen}{+} Extended life and reduced maintenance costs\\
-      \textcolor{red}{-} Use of large land area\\
-      \textcolor{red}{-} Degradation of wildlife habitat
+      \textcolor{NTNUgreen}{\textbf{+}} Cost effective: \$/MW half of rooftop installations\\
+      \textcolor{NTNUgreen}{\textbf{+}} Extended life and reduced maintenance costs\\
+      \textcolor{red}{\textbf{-}} Use of large land area\\
+      \textcolor{red}{\textbf{-}} Degradation of wildlife habitat
     \end{column}
     \begin{column}{0.5\columnwidth}
       {\center \textcolor{NTNUBlue}{Distributed}}\\
-      \textcolor{NTNUgreen}{+} Electricity is primary consumed by system owner, leading to lower cost for them\\
-      \textcolor{NTNUgreen}{+} Reduced line losses\\
-      \textcolor{red}{-} Limited space
+      \textcolor{NTNUgreen}{\textbf{+}} Electricity is primary consumed by system owner, leading to lower cost for them\\
+      \textcolor{NTNUgreen}{\textbf{+}} Reduced line losses\\
+      \textcolor{red}{\textbf{-}} Limited space
     \end{column}
   \end{columns}
 \end{frame}
 
-\begin{frame}{Offshore PV (OPV)}
+\begin{frame}{Offshore PV (OPV)}{\insertsubsection}
   Solve the problem of large scale PV system deployment without reducing land development. \\
   Furthermore: 
   \begin{itemize}
@@ -121,7 +129,7 @@
 \end{frame}
 
 \subsection{Mooring systems}
-\begin{frame}{Mooring system}
+\begin{frame}{Principal solutions}{\insertsubsection}
   How can we ensure that the plant remains in a fixed position and is not tow away?
 
   Principal solutions:\\
@@ -129,7 +137,7 @@
   
 \end{frame}
 
-\begin{frame}{Mooring system - Pile}
+\begin{frame}{Monopile}{\insertsubsection}
   Suitable for shallow water depth less than 5 m (e.g. aquaculture ponds)\\
   In China projects for 1 GW installed capacity (8 km from shore)
 
@@ -138,15 +146,15 @@
     \includegraphics[width=0.3\columnwidth]{figure/floating_PV_china.png}
   \end{figure}
 
-  \textcolor{NTNUgreen}{+} The mooring system offers stability\\
-  \textcolor{NTNUgreen}{+} Reduction of water surface temp. $\Rightarrow$ Good for fish farming\\
-  \textcolor{red}{-} Marine organism may attach and faster the pile corrosion\\
-  \textcolor{red}{-} Need of transport of the piles
+  \textcolor{NTNUgreen}{\textbf{+}} The mooring system offers stability\\
+  \textcolor{NTNUgreen}{\textbf{+}} Reduction of water surface temp. $\Rightarrow$ Good for fish farming\\
+  \textcolor{red}{\textbf{-}} Marine organism may attach and faster the pile corrosion\\
+  \textcolor{red}{\textbf{-}} Need of transport of the piles
 
   {\tiny Figure source: \cite{jmse11112064}}
 \end{frame}
 
-\begin{frame}{Mooring system - Floating}
+\begin{frame}{Floating}{\insertsubsection}
   \textcolor{NTNUBlue}{Idea:} The PV is mounted on a floating module whom movement is restricted through a multi-point mooring system 
   
   \textcolor{NTNUBlue}{Relatively young technology: }First installation in 2007
@@ -154,38 +162,38 @@
 \end{frame}
 
 \subsection{Types of floating structures}
-\begin{frame}{Pontoon Floaters Module}
+\begin{frame}{Pontoon Floaters Module}{\insertsubsection}
   \begin{figure}
     \centering
     \includegraphics[width=0.4\columnwidth]{figure/pontoon.png}
   \end{figure}
   
-  \textcolor{NTNUgreen}{+} Pontoons made of HDPE, which is resistant and recyclable\\
-  \textcolor{NTNUgreen}{+} Easy installation\\
-  \textcolor{NTNUgreen}{+} Covering water surface reduce evaporation\\
-  \textcolor{NTNUgreen}{+} Cooling with water circulation and wind gusts effects\\
-  \textcolor{red}{-} Interaction between floating bodies difficult to be modelled\\
-  \textcolor{red}{-} Aquatic organism may attach the floating body and sink it
+  \textcolor{NTNUgreen}{\textbf{+}} Pontoons made of HDPE, which is resistant and recyclable\\
+  \textcolor{NTNUgreen}{\textbf{+}} Easy installation\\
+  \textcolor{NTNUgreen}{\textbf{+}} Covering water surface reduce evaporation\\
+  \textcolor{NTNUgreen}{\textbf{+}} Cooling with water circulation and wind gusts effects\\
+  \textcolor{red}{\textbf{-}} Interaction between floating bodies difficult to be modelled\\
+  \textcolor{red}{\textbf{-}} Aquatic organism may attach the floating body and sink it
 
   {\tiny Figure source: \cite{jmse11112064}}
 \end{frame}
 
-\begin{frame}{Very Large Floating Structure}
+\begin{frame}{Very Large Floating Structure}{\insertsubsection}
   Floating module consists of a floating body and a flexible film on which PV are laid on.
   \begin{figure}
     \centering
     \includegraphics[width=0.3\columnwidth]{figure/vlfs.png}
   \end{figure}
 
-  \textcolor{NTNUgreen}{+} Smaller air gap with water and better cooling effect\\
-  \textcolor{NTNUgreen}{+} Flexible structure better accomplish wave action and so more suitable for offshore deployment\\
-  \textcolor{red}{-} Single module is bulky and so difficult to install\\
-  \textcolor{red}{-} Deep sea installation requires special mooring
+  \textcolor{NTNUgreen}{\textbf{+}} Smaller air gap with water and better cooling effect\\
+  \textcolor{NTNUgreen}{\textbf{+}} Flexible structure better accomplish wave action and so more suitable for offshore deployment\\
+  \textcolor{red}{\textbf{-}} Single module is bulky and so difficult to install\\
+  % \textcolor{red}{\textbf{-}} Deep sea installation requires special mooring
 
   {\tiny Figure source: \cite{jmse11112064}}
 \end{frame}
 
-\begin{frame}{Very flexible floating structures (VFFS)}
+\begin{frame}{Very flexible floating structures (VFFS)}{\insertsubsection}
   PV module are directly placed on the water's surface forming long structures (which can withstand large deflections).
 
   \begin{figure}
@@ -193,25 +201,54 @@
     \includegraphics[width=0.3\columnwidth]{figure/vffs.png}
   \end{figure}
 
-  \textcolor{NTNUgreen}{+} Excellent water-cooling effect\\
-  \textcolor{NTNUgreen}{+} Reduced weight and simple mooring system\\
-  \textcolor{NTNUgreen}{+} Reduce installation costs, possibility to tow ashore during winter\\
-  \textcolor{red}{-} Earlier development stage
+  \textcolor{NTNUgreen}{\textbf{+}} Excellent water-cooling effect\\
+  \textcolor{NTNUgreen}{\textbf{+}} Reduced weight and simple mooring system\\
+  \textcolor{NTNUgreen}{\textbf{+}} Reduce installation costs, possibility to tow ashore during winter\\
+  \textcolor{red}{\textbf{-}} Earlier development stage
 
   {\tiny Figure source \cite{vffs_figure}}
 \end{frame}
 
+\subsection{Installation example}
+\begin{frame}{Example: EDP Renewables APAC in Singapore}
+  Plant located in the Straits of Johor (Between Singapore and Malaysia)
+  \begin{columns}
+    \begin{column}{0.62\columnwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\columnwidth]{figure/floating_edpr.jpg}
+      \end{figure}
+    \end{column}
+    \begin{column}{0.38\columnwidth}
+      \begin{table}
+        \begin{tabular}{ll}
+          Installation & March 2021\\
+          Water depth & $\backsim $ 12 m\\
+          Type & Nearshore \\
+          Capacity & 5 MWp\\
+          Surface & 50 000 \si{\square\meter}\\
+          Panels & 13 312 \\
+          Inverters & 40 \\
+          Floaters & 30 000\\
+          Energy & 6 GWh\\
+        \end{tabular}
+      \end{table}
+    \end{column}
+  \end{columns}
+  {\tiny Source: \cite{edpr_floating_solar}, \cite{straitstimes_floating_solar_farm}}
+\end{frame}
+
 \subsection{Summary}
-\begin{frame}{Conclusion}
-  \textcolor{NTNUBlue}{Landscape utilization}: less consume of soil
+\begin{frame}{Summary}
+  \textcolor{NTNUBlue}{Environmental impact}: less consume of soil; reduce evaporation; impact of wildlife
+
+  \textcolor{NTNUBlue}{PV module}: development of the semiconductor technologies and improved efficiency for the lower temperature; necessity of lighter structures for floating
   
-  \textcolor{NTNUBlue}{Floating structure}: up to now mainly use of rigid structures, but nowadays also lightweight composite materials start to be used.
+  \textcolor{NTNUBlue}{Floating structure}: up to now mainly use of rigid structures, but nowadays also lightweight composite materials start to be used
 
-  \textcolor{NTNUBlue}{PV module}: development of the semiconductor technologies and improved efficiency for the lower temperature
+  \textcolor{NTNUBlue}{Mooring system}: required increasing resistance for withstand the loads. Anti corrosion and anti biological parasites feature are important
 
-  \textcolor{NTNUBlue}{Mooring system}: required increasing resistance for withstand the loads. Anti corrosion and anti biological parasites feature are important. 
-
-  \textcolor{NTNUBlue}{Transportation and installation}: easier than with the use of monopiles.
+  \textcolor{NTNUBlue}{Transportation and installation}: easier than with the use of monopiles
 
 \end{frame}
 
@@ -250,7 +287,7 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Damping and inertia}{Classical metrics}
   Eigenvalue analysis
   \begin{itemize}
     \item Damping ratio of the power system
@@ -269,7 +306,7 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Time domain of the post-fault frequency evolution}{Energy metrics}
+\begin{frame}{Energy metrics}{}
   \begin{itemize}[<+(1)->]
       \item Total energy imbalance
       \begin{equation}
@@ -290,9 +327,8 @@
     $q_i, r_m, and r_d$ are weights used for penalize one effort or the other
 \end{frame}
 
-\begin{frame}
-  \begin{itemize}
-    \item $\mathcal{H}_2$ norm: energy of the response to an impulse fault \textit{or} expected energy of the response to a white noise
+\begin{frame}{$\mathcal{H}_2$ norm}
+  The energy of the response to an impulse fault \textit{or} expected energy of the response to a white noise
     \begin{equation}
       \int_{0}^{\infty}\| y_p \|^2 dt = \int_{0}^{\infty} \omega^T Q \omega + p_{m}^T R_m p_{m} + p_{d}^T R_d p_{d} dt
     \end{equation}
@@ -308,8 +344,17 @@
       \text{Observability gramian: } PA + A^TP+C^TC=0
     \end{gather} 
     }
-    \item $\mathcal{H}_{\infty }$ norm: root mean square gain from the disturbance to the performance output
-  \end{itemize}
+\end{frame}
+
+\begin{frame}{$\mathcal{H}_{\infty }$ norm}
+  
+  $\mathcal{H}_{\infty }$ norm: intuitively, it gives the maximum amplification of an input signal at the output that is caused by the system over all possible input signals
+
+  Defined as the supremum of the largest singular number of its transfer function over the imaginary axis:
+  \begin{equation}
+    \| \mathcal{H} \|_{\infty}= \sup_{\omega \in \mathbb{R} } \sigma_{max}\left(\mathcal{G}\left(j\omega\right)\right)
+  \end{equation}
+  
 \end{frame}
 
 \subsection{Example}

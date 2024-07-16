@@ -1,0 +1,225 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{irena2019}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=500fd0a7c7f8d18ffb0f19871508b45d}{%
+           family={{International Renewable Energy Agency (IRENA)}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {International Renewable Energy Agency}%
+      }
+      \list{location}{1}{%
+        {Abu Dhabi}%
+      }
+      \strng{namehash}{500fd0a7c7f8d18ffb0f19871508b45d}
+      \strng{fullhash}{500fd0a7c7f8d18ffb0f19871508b45d}
+      \strng{bibnamehash}{500fd0a7c7f8d18ffb0f19871508b45d}
+      \strng{authorbibnamehash}{500fd0a7c7f8d18ffb0f19871508b45d}
+      \strng{authornamehash}{500fd0a7c7f8d18ffb0f19871508b45d}
+      \strng{authorfullhash}{500fd0a7c7f8d18ffb0f19871508b45d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{A Global Energy Transformation: Paper}
+      \field{title}{Future of Solar Photovoltaic: Deployment, Investment, Technology, Grid Integration and Socio-Economic Aspects}
+      \field{year}{2019}
+    \endentry
+    \entry{iea2023}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b33b47b3008c8c47f90a77e0c2dd3060}{%
+           family={{International Energy Agency}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{fullhash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{bibnamehash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{authorbibnamehash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{authornamehash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \strng{authorfullhash}{b33b47b3008c8c47f90a77e0c2dd3060}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-07-14}
+      \field{title}{Renewable Electricity Capacity Additions by Technology and Segment, 2016-2028}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.iea.org/data-and-statistics/charts/renewable-electricity-capacity-additions-by-technology-and-segment-2016-2028
+      \endverb
+      \verb{url}
+      \verb https://www.iea.org/data-and-statistics/charts/renewable-electricity-capacity-additions-by-technology-and-segment-2016-2028
+      \endverb
+    \endentry
+    \entry{jmse11112064}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e988a07e9ab558b76cea5ccae30e440f}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Guozhen},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a669f509219080af82fa19f526709cf}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Yichang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c6649d02b24225ca4c9012cee6c790de}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xi},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab9ad63449be1007d67f47be9153ed8e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Mingsheng},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8a59fb78842c691d799ce55f0979fde}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Yanlin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7f92e98ab232c4d3efe2442b5a4fea0e}
+      \strng{fullhash}{74519dc7c76b95144dde18539e64cd7d}
+      \strng{bibnamehash}{7f92e98ab232c4d3efe2442b5a4fea0e}
+      \strng{authorbibnamehash}{7f92e98ab232c4d3efe2442b5a4fea0e}
+      \strng{authornamehash}{7f92e98ab232c4d3efe2442b5a4fea0e}
+      \strng{authorfullhash}{74519dc7c76b95144dde18539e64cd7d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Fossil fuel consumption has progressively increased alongside global population growth, representing the predominant energy consumption pattern for humanity. Unfortunately, this persistent reliance on fossil fuels has resulted in a substantial surge in pollution emissions, exerting a detrimental influence on the delicate ecological balance. Therefore, it is imperative to find new renewable energy sources to replace fossil fuels. Solar energy is a clean energy source and has become the most preferred option for human day-to-day needs. Since the construction of the world’s first floating photovoltaic power station, humanity has been continuously advancing the technology of power generation by floating photovoltaics. This review comprehensively elucidates the progression of offshore photovoltaic technology and illustrates the composition of the floating photovoltaic system. Each section meticulously contrasts the advantages and drawbacks of various photovoltaic systems. In addition, an in-depth analysis of the offshore photovoltaic application potentials is conducted based on fundamental theories, thereby offering valuable insights for future research. Finally, an encompassing summary of the potential challenges associated with deep-sea floating photovoltaic systems is presented.}
+      \field{issn}{2077-1312}
+      \field{journaltitle}{Journal of Marine Science and Engineering}
+      \field{number}{11}
+      \field{title}{A Comprehensive Review of Floating Solar Plants and Potentials for Offshore Applications}
+      \field{volume}{11}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.3390/jmse11112064
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2077-1312/11/11/2064
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2077-1312/11/11/2064
+      \endverb
+    \endentry
+    \entry{vffs_figure}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3d4df21372187552ff553e4932575d2d}{%
+           family={Claus},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=173ae57bfb931c92a1d61a2ef68f8937}{%
+           family={López},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c33a1b253a421da347e78adc9138b728}
+      \strng{fullhash}{c33a1b253a421da347e78adc9138b728}
+      \strng{bibnamehash}{c33a1b253a421da347e78adc9138b728}
+      \strng{authorbibnamehash}{c33a1b253a421da347e78adc9138b728}
+      \strng{authornamehash}{c33a1b253a421da347e78adc9138b728}
+      \strng{authorfullhash}{c33a1b253a421da347e78adc9138b728}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The floating photovoltaic (FPV) market has been expanding at an impressive rate over the last decade, doubling its global installed capacity year after year. This growth was possible due to the numerous advantages FPV plants pose over ground-mounted plants, which are mainly related to land occupation and energy efficiency. However, this expansion has been limited to freshwater applications, despite the vast potential that the offshore environment entails. The lack of maturity of the sector and the harsher environmental conditions have hindered the transition of this technology to the marine environment. Furthermore, a lack of publications regarding the structural analysis of this technology was found, as well as no specific designs standards for marine FPV. On these grounds, this article reviews the design aspects of this technology with a focus on marine applications, highlighting relevant aspects to be tackled. First, the main components of the FPV technology are described and their compatibility with the marine environment is assessed. Then, a structural classification of the current plants is proposed. This allows the individual suitability analysis of each typology for the marine environment. Existing marine FPV projects are described and classified. Afterwards, synergies between marine FPV plants and other sectors are gathered and discussed. Finally, general design guidelines are provided, with a focus on the structural response of FPV structures subjected to marine environmental actions. Insight on the nature of these actions (wind, waves, currents, and tides) as well as how they interact with FPV plants is provided.}
+      \field{issn}{1364-0321}
+      \field{journaltitle}{Renewable and Sustainable Energy Reviews}
+      \field{title}{Key issues in the design of floating photovoltaic structures for the marine environment}
+      \field{volume}{164}
+      \field{year}{2022}
+      \field{pages}{112502}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.rser.2022.112502
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1364032122004063
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1364032122004063
+      \endverb
+      \keyw{Offshore renewable energy,Marine renewable energy,Marine structures,Floating structures,Environmental loads,Structural design}
+    \endentry
+    \entry{Increasing_the_Resilience}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b01a9b053058d73e03257c2430625c6e}{%
+           family={Gross},
+           familyi={G\bibinitperiod},
+           given={Dominic},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=52268ca42c4adf3bc9131a73fefa04c9}{%
+           family={Bolognani},
+           familyi={B\bibinitperiod},
+           given={Saverio},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3beb798c1c8dab5e2eee09c76f282a9e}{%
+           family={Poolla},
+           familyi={P\bibinitperiod},
+           given={Bala},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=10b3680a40660cdb6868139eaa1af2ab}{%
+           family={Dörfler},
+           familyi={D\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e83b6bf4609fd03fc4e08e1755c96131}
+      \strng{fullhash}{8b9e73033fb4b5ceb3bfd5c39c10c7e0}
+      \strng{bibnamehash}{e83b6bf4609fd03fc4e08e1755c96131}
+      \strng{authorbibnamehash}{e83b6bf4609fd03fc4e08e1755c96131}
+      \strng{authornamehash}{e83b6bf4609fd03fc4e08e1755c96131}
+      \strng{authorfullhash}{8b9e73033fb4b5ceb3bfd5c39c10c7e0}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{08}
+      \field{title}{Increasing the Resilience of Low-inertia Power Systems by Virtual Inertia and Damping}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.3929/ETHZ-B-000232185
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
